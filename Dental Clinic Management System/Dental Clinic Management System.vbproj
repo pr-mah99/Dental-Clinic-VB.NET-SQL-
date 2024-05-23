@@ -1,0 +1,1259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{539C1506-99CC-4C5D-AE85-5EF1A1B8E043}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Dental_Clinic_Management_System.My.MyApplication</StartupObject>
+    <RootNamespace>Dental_Clinic_Management_System</RootNamespace>
+    <AssemblyName>Dental Clinic Management System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Dental Clinic Management System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Dental Clinic Management System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons8_dental_braces_1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge">
+      <HintPath>DLL\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>DLL\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>DLL\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>DLL\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Bytescout.BarCodeReader">
+      <HintPath>DLL\Bytescout.BarCodeReader.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Charts.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v21.2.Export, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v21.2.UI, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v21.2.UI, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v21.2.Wizard, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v21.2.Extensions, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DGV Printer">
+      <HintPath>DLL\DGV Printer.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>DLL\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>DLL\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="KeepAutomation.Barcode.Windows">
+      <HintPath>DLL\KeepAutomation.Barcode.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="LollipoUi">
+      <HintPath>DLL\LollipoUi.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>DLL\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>DLL\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>DLL\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="QRCoder, Version=1.4.3.0, Culture=neutral, PublicKeyToken=c4ed5b9ae8358a28, processorArchitecture=MSIL">
+      <HintPath>..\packages\QRCoder.1.4.3\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="XanderUI">
+      <HintPath>DLL\XanderUI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Barcode_Webcam.Designer.vb">
+      <DependentUpon>Barcode_Webcam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Barcode_Webcam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumption.designer.vb">
+      <DependentUpon>Consumption.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consumption.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create_Barcode.Designer.vb">
+      <DependentUpon>Create_Barcode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Create_Barcode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers\Customer_show.designer.vb">
+      <DependentUpon>Customer_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\Customer_show.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers\more.designer.vb">
+      <DependentUpon>more.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\more.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers\sell.designer.vb">
+      <DependentUpon>sell.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\sell.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers\Show_Message.designer.vb">
+      <DependentUpon>Show_Message.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\Show_Message.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cyper.vb" />
+    <Compile Include="Debts_Show.Designer.vb">
+      <DependentUpon>Debts_Show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Debts_Show.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DentalDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DentalDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Earns_Debts.Designer.vb">
+      <DependentUpon>Earns_Debts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Earns_Debts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Earns_Show.Designer.vb">
+      <DependentUpon>Earns_Show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Earns_Show.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fingerprint.Designer.vb">
+      <DependentUpon>fingerprint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fingerprint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fingerprint_auto.Designer.vb">
+      <DependentUpon>fingerprint_auto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fingerprint_auto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.vb">
+      <DependentUpon>Home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBox.designer.vb">
+      <DependentUpon>MessageBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="msg_end.designer.vb">
+      <DependentUpon>msg_end.vb</DependentUpon>
+    </Compile>
+    <Compile Include="msg_end.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Patient.Designer.vb">
+      <DependentUpon>Patient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Patient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient_Advanced.Designer.vb">
+      <DependentUpon>Patient_Advanced.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Patient_Advanced.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Patient_Show.Designer.vb">
+      <DependentUpon>Patient_Show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Patient_Show.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Patient_Advanced_English.Designer.vb">
+      <DependentUpon>Patient_Advanced_English.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Patient_Advanced_English.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Report_Staff_Arabic.Designer.vb">
+      <DependentUpon>Report_Staff_Arabic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Report_Staff_Arabic.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report_Patient.Designer.vb">
+      <DependentUpon>Report_Patient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Patient.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report_Staff.Designer.vb">
+      <DependentUpon>Report_Staff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Staff.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report_Type.Designer.vb">
+      <DependentUpon>Report_Type.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Type.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Review_notes.Designer.vb">
+      <DependentUpon>Review_notes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Review_notes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Room_wait.Designer.vb">
+      <DependentUpon>Room_wait.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Room_wait.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salary.Designer.vb">
+      <DependentUpon>Salary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Salary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting.designer.vb">
+      <DependentUpon>Setting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splash.designer.vb">
+      <DependentUpon>splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SQL.vb" />
+    <Compile Include="Staff.Designer.vb">
+      <DependentUpon>Staff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_Show.Designer.vb">
+      <DependentUpon>Staff_Show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_Show.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TakePhotoCamera.Designer.vb">
+      <DependentUpon>TakePhotoCamera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TakePhotoCamera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update.Designer.vb">
+      <DependentUpon>Update.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Update.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users.Designer.vb">
+      <DependentUpon>Users.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Users.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome.designer.vb">
+      <DependentUpon>Welcome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Barcode_Webcam.resx">
+      <DependentUpon>Barcode_Webcam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumption.resx">
+      <DependentUpon>Consumption.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create_Barcode.resx">
+      <DependentUpon>Create_Barcode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers\Customer_show.resx">
+      <DependentUpon>Customer_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers\more.resx">
+      <DependentUpon>more.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers\sell.resx">
+      <DependentUpon>sell.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers\Show_Message.resx">
+      <DependentUpon>Show_Message.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Debts_Show.resx">
+      <DependentUpon>Debts_Show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Earns_Debts.resx">
+      <DependentUpon>Earns_Debts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Earns_Show.resx">
+      <DependentUpon>Earns_Show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fingerprint.resx">
+      <DependentUpon>fingerprint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fingerprint_auto.resx">
+      <DependentUpon>fingerprint_auto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBox.resx">
+      <DependentUpon>MessageBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="msg_end.resx">
+      <DependentUpon>msg_end.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient.resx">
+      <DependentUpon>Patient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient_Advanced.resx">
+      <DependentUpon>Patient_Advanced.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient_Show.resx">
+      <DependentUpon>Patient_Show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Patient_Advanced_English.resx">
+      <DependentUpon>Patient_Advanced_English.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Report_Staff_Arabic.resx">
+      <DependentUpon>Report_Staff_Arabic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Patient.resx">
+      <DependentUpon>Report_Patient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Staff.resx">
+      <DependentUpon>Report_Staff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Type.resx">
+      <DependentUpon>Report_Type.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Review_notes.resx">
+      <DependentUpon>Review_notes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Room_wait.resx">
+      <DependentUpon>Room_wait.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salary.resx">
+      <DependentUpon>Salary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting.resx">
+      <DependentUpon>Setting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splash.resx">
+      <DependentUpon>splash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff.resx">
+      <DependentUpon>Staff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_Show.resx">
+      <DependentUpon>Staff_Show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TakePhotoCamera.resx">
+      <DependentUpon>TakePhotoCamera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update.resx">
+      <DependentUpon>Update.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users.resx">
+      <DependentUpon>Users.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome.resx">
+      <DependentUpon>Welcome.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DentalDataSet.xsc">
+      <DependentUpon>DentalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DentalDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DentalDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DentalDataSet.xss">
+      <DependentUpon>DentalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gif\YYe6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gif\____2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gif\85Ex.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gif\acaaea_106c617a684e404f8472f43ec1f7bbad~mv2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gif\DearWellinformedDalmatian-size_restricted.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gif\dots.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gif\downloads.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gif\loading-gears.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gif\QHTn.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\About.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\add1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Add2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\BPV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\BRV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Cabriolet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\cancel.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Checkmark_28px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Checkmark_28px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Circulation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Close.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\close.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\coins.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\conference.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\configure.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\CPV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Create.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\CRV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\CV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\DOC_NEW.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Error_28px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\exit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\First.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\green dollar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\help.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\home.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_about_400px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_about_400px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_account_320px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_add_400px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_add_480px_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_add_512px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_administrative_tools_400px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_administrator_male_320px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_ambulance_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_bartender_female_500px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_blog_400px_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_browse_page_400px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_bulleted_list_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_businesswoman_320px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_card_payment.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_card_payment_320px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_choice_320px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_choice_480px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_computer_mouse_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_console_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_contacts_400px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_contacts_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_crown_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_customer_400px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_customer_500px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_delete_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_delete_view_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_dental_braces_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_dental_braces_500px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_dental_filling_400px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_dental_mirror_400px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_denture_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_exit_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_exit_sign_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_folder_400px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_folder_500px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_gmail_500px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_google_wallet_320px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_health_checkup_500px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_help_400px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_high_importance_320px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_home_page_400px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_hospital_bed_320px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_hospital_folder_512px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_id_not_verified_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_id_not_verified_480px_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_list_400px_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_maintenance_320px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_maintenance_400px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_maintenance_480px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_male_user_400px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_minus_sign_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_money_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_money_bag_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_natural_user_interface_2_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_nurse_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_people_group_bill_500px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_pill_400px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_repository_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_repository_500px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_resume_320px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_rotate_camera_320px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_sandbox_320px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_save_400px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_slack_320px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_stumbleupon_400px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_tooth_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_toothbrush_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_unverified_account_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_update_left_rotation_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_urgent_property_320px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_user_folder_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_user_folder_480px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_user_manual_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_user_shield_480px_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_view_480px_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_wechat_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8_windows_client_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\images1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\images12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Info_28px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Ing 2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Inq 1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Inquiry.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Inventory.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\invoice.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\JV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Last.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Log Off.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\LorryGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Main BG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Market home.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Market.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\max-maximize-full-size-screen-ui-round-element-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Next.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Paste.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\payment.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\piggy bank.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Previous.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Print.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\printer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\prod.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\PV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Redo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Refresh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Repeat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Reports.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\safe.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Save.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Setting_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Settings.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\spare_parts1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\text.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\toolbox.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Turn off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Update.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Usage.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\User Info.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\User_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Vendor.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Warning_28px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\About.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Screenshot_15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\teeth-3414722_1280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\teeth-whitening-3154793_960_720.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\tooth-3414719_1280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\young-handsome-physician-medical-robe-with-stethoscope-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\dentistry-oral-hygiene-dental-surgery-human-tooth-health-png-favpng-FJGBg0dddj3Mje2NLDYbNsr9c.jpg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\New folder %282%29\group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\New folder %282%29\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\New folder %282%29\xps-8pb7Hq539Zw-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\New folder %282%29\xps-uWFFw7leQNI-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\SideShow\01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\SideShow\02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\SideShow\03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\SideShow\04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\SideShow\05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\SideShow\06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="social media\Facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="social media\Instagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="social media\Telegram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="social media\twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="social media\WHATSAPP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="social media\Youtube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sound\End-App.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sound\Error.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sound\Error-2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sound\go_slide.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sound\Info.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sound\Loading.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sound\notification.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sound\Success.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sound\Warrning.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sound\Welcome.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sound\Added.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sound\click.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sound\Barcode_Scanner.wav" />
+    <None Include="img\icons8_qr_code_400px.png" />
+    <None Include="Icons\icons8_price_tag_400px.png" />
+    <None Include="Icons\icons8_print_240px.png" />
+    <None Include="Icons\icons8_print_96px.png" />
+    <None Include="Icons\icons8_printer_96px.png" />
+    <None Include="img\Card\icons8_mobile_80px.png" />
+    <None Include="img\Card\icons8_email_80px.png" />
+    <None Include="img\Card\icons8_location_80px.png" />
+    <None Include="Icons\icons8_help_80px.png" />
+    <None Include="img\Card\icons8_identification_documents_80px.png" />
+    <None Include="img\Card\Card.png" />
+    <None Include="Icons\1024px-User_icon_2.svg.png" />
+    <None Include="img\Splash_teeth.jpg" />
+    <None Include="Gif\Dark_mode.gif" />
+    <None Include="Gif\animat-lightbulb-color.gif" />
+    <None Include="Gif\517b08e96190d0b0ca5d65143fb07cc9.gif" />
+    <None Include="Gif\44f002166db0c224c90703f18a659dae.gif" />
+    <None Include="Gif\image_processing20210802-2754-uc47v2.gif" />
+    <None Include="Gif\0e47720e157806d45d45c736fb2fa920.gif" />
+    <None Include="Gif\Chemistry-Loading-1.gif" />
+    <None Include="Gif\normal_60dd275b66949.gif" />
+    <None Include="Gif\searching_tickets.gif" />
+    <None Include="Gif\65.gif" />
+    <None Include="Gif\Analytics_Reporting-01.gif" />
+    <None Include="Gif\04-gif.gif" />
+    <None Include="Gif\9f97187c5333792fe39ed8df9d61a9f7.gif" />
+    <None Include="Gif\preview.gif" />
+    <None Include="Gif\03.gif" />
+    <Content Include="Dental.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dental_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Dental.mdf</DependentUpon>
+    </Content>
+    <Content Include="icons8_dental_braces_1.ico" />
+    <None Include="Icons\Delete23.png" />
+    <None Include="Icons\icons8_alphabetical_sorting_480px.png" />
+    <None Include="Icons\icons8_l_512px.png" />
+    <None Include="Icons\icons8_a_512px.png" />
+    <None Include="Icons\icons8_t_512px.png" />
+    <None Include="Icons\icons8_n_512px.png" />
+    <None Include="Icons\icons8_epsilon_400px.png" />
+    <None Include="Icons\icons8_d_512px.png" />
+    <None Include="Icons\icons8_3d_monitor_480px.png" />
+    <None Include="Icons\icons8_touch_id_400px.png" />
+    <None Include="Icons\icons8_fingerprint_512px.png" />
+    <None Include="Resources\icons8_fingerprint_512px.png" />
+    <None Include="Resources\icons8_print_from_cloud_320px.png" />
+    <None Include="Resources\icons8_print_480px.png" />
+    <None Include="Resources\printer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
